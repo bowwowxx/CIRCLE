@@ -4,7 +4,7 @@ OS=$(uname -a | awk '{print $1}')
 
 case $OS in
     Linux) COWSFOLDER=/usr/share/cowsay/cows;sudo apt-get install -y cowsay fortune;;
-    Darwin) COWSFOLDER=/usr/local/Cellar/cowsay/3.03/share/cows;sudo brew install cowsay fortune;gem install lolcat;;
+    Darwin) COWSFOLDER=/usr/local/Cellar/cowsay/3.03/share/cows;sudo brew install cowsay fortune;sduo gem install lolcat;;
     *) echo "Your device is not supported yet."; exit 0;;
 esac
 
